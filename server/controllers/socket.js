@@ -1,6 +1,7 @@
 const { updateUserPoints } = require("../utilities/User.utilities");
 
 module.exports.Socket = (server) => {
+    
     const io = require("socket.io")(server, { cors: true });
 
     io.on("connection", (socket) => {
