@@ -8,7 +8,8 @@ module.exports.updateUserPoints = (points, id) => {
             else if (user.points <= 4999) user.loyaltyStatus = "Silver";
             else if (user.points <= 9999) user.loyaltyStatus = "Gold";
             else user.loyaltyStatus = "Platinum";
-
+            
+            
             return user;
         })
         .then((user) => {
